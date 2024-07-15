@@ -14,7 +14,6 @@ const MovieListScreen = ({ navigation }) => {
         },
       })
       .then((response) => {
-        console.log("response2: " + JSON.stringify(response.data.results));
         setMovies(response.data.results);
       })
       .catch((error) => {
